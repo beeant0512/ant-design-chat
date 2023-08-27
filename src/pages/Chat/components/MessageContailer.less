@@ -1,0 +1,24 @@
+@action-height: 320px;
+
+.message {
+  :global {
+    .ant-pro-card-body {
+      height: calc(100vh - 70px - @action-height);
+      overflow: auto;
+    }
+
+    .ant-pro-card-actions {
+      height: @action-height;
+      width: 100%;
+    }
+  }
+}
+
+.appmessage {
+  :global {
+    .ant-pro-card-body {
+      height: calc(100vh - 70px);
+      overflow: auto;
+    }
+  }
+}
